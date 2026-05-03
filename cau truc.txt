@@ -1,0 +1,111 @@
+project_root/
+│
+├── README.md
+│
+├── requirements.txt
+│
+├── config/                              # TRI THỨC & NHÃN (CHUNG)
+│   ├── config.json                      # negation, intensifier, emoji
+│   ├── emotions.json                    # từ điển cảm xúc cho RULE
+│   ├── labels.json                      # id ↔ emotion (0–6)
+│   └── label_weights.json               # trọng số cho ensemble
+│
+├── core/                                # RULE-BASED ENGINE
+│   ├── __init__.py
+│   ├── engine.py                        # logic cảm xúc chi tiết
+│   ├── utils.py                         # clean text + vocab
+│   └── core_logic.py                    # chuẩn hoá output rule
+│
+├── data/
+│   ├── raw/                             # DỮ LIỆU GỐC
+│   │   ├── manual/                      # gán tay
+│   │   │   ├── happy.txt
+│   │   │   ├── sad.txt
+│   │   │   ├── angry.txt
+│   │   │   ├── fear.txt
+│   │   │   ├── disgust.txt
+│   │   │   ├── surprise.txt
+│   │   │   └── neutral.txt
+│   │   │
+│   │   └── crawl/                       # (tuỳ chọn) crawl mạng
+│   │
+│   ├── processed/                       # SAU RULE / AUTO LABEL
+│   │   ├── auto_labeled.csv
+│   │   └── merged_manual_auto.csv
+│   │
+│   └── split/                           # DATA CUỐI CHO MODEL
+│       ├── train.csv
+│       ├── val.csv
+│       └── test.csv
+│
+├── preprocessing/                       # TIỀN XỬ LÝ CHO MODEL
+│   ├── __init__.py
+│   ├── clean_text.py
+│   ├── build_dataset.py                 # gộp + split dữ liệu
+│   └── dataset_loader.py                # PyTorch Dataset
+│
+├── models/
+│   ├── transformer/
+│   │   ├── __init__.py
+│   │   └── phobert_model.py
+│   │
+│   ├── ml/
+│   │   ├── __init__.py
+│   │   ├── tfidf_vectorizer.py
+│   │   └── svm_model.py
+│   │
+│   └── dl/
+│       ├── __init__.py
+│       └── lstm_model.py
+│
+├── training/                            # HUẤN LUYỆN
+│   ├── __init__.py
+│   ├── trainer_base.py                  # base trainer
+│   ├── trainer_phobert.py
+│   ├── trainer_lstm.py
+│   ├── train_phobert.py                 # CHẠY FILE NÀY
+│   ├── train_lstm.py
+│   └── train_svm.py
+│
+├── saved_models/
+│   ├── phobert/
+│   │   ├── config.json
+│   │   └── model.pt
+│   │
+│   ├── lstm/
+│   │   └── model.pt
+│   │
+│   └── svm/
+│       └── model.pkl
+│
+├── ensemble/
+│   ├── __init__.py
+│   └── ensemble_predictor.py
+│
+├── inference/
+│   ├── __init__.py
+│   ├── predict_rule.py
+│   ├── predict_phobert.py
+│   ├── predict_lstm.py
+│   ├── predict_svm.py
+│   └── predict_final.py                 # CHẠY FILE NÀY
+│
+├── scripts/
+│   ├── auto_label.py
+│   ├── validate_data.py
+│   └── statistics.py
+│
+└── experiments/                         # test / debug / notebook
+    └── debug_phobert.py
+
+
+
+
+su dung 7 nhan co ban:
+"trung tính":0
+"vui":1
+"buồn":2
+"sợ hãi":3
+"tức giận":4
+"ghê tởm":5
+"ngạc nhiên":6

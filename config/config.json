@@ -1,0 +1,20 @@
+{
+  "contrast": ["nhưng", "tuy nhiên", "cơ mà", "dẫu vậy", "mặc dù", "song", "thế mà"],
+  "negation": ["không", "chẳng", "chưa", "đâu có", "k", "kh", "ko", "đếch", "éo", "chả", "không phải"],
+  "intensifiers": {
+    "pre": ["rất", "quá", "lắm", "cực", "cực kỳ", "vô cùng", "hết sảy", "siêu", "hơi", "khá"],
+    "post": ["lắm", "phết", "vãi", "vcl", "kinh khủng", "cực", "quá chừng", "xỉu", "vô cùng"],
+    "decrease": ["hơi", "chút", "tí", "tẹo", "sương sương"]
+  },
+  "emoji_dict": {
+    "vui": ["=))", ":)", ":v", "^^", ":D", "🤣", "😂", "🥰", "😘"],
+    "buồn": [":(", "=(", "T_T", "😭😭", "😢", "☹️"],
+    "tức_giận": ["😡", "🤬", ":@"],
+    "ngạc_nhiên": ["😮", "😱"],
+    "sợ_hãi": ["😨", "😰"]
+  },
+  "inverse_map": {
+    "vui": "buồn", "tức_giận": "vui", 
+    "sợ_hãi": "vui", "ghê_tởm": "vui", "ngạc_nhiên": "vui"
+  }
+}

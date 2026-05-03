@@ -1,0 +1,23 @@
+{
+  "vui": [
+    "vui", "hạnh phúc", "phấn khởi", "vui vẻ", "ngon", "tốt", 
+    "ổn", "ok", "fine", "tuyệt", "tuyệt vời", "hài lòng", 
+    "mượt", "trơn tru", "xịn", "đỉnh", "chất lượng", "phê",
+    "tin tưởng", "yên tâm", "mong đợi", "hi vọng", "kỳ vọng", 
+    "hihi", "haha", "kkk", "kaka", "ahihi", "xuất sắc", "ưng ý"
+  ],
+  "buồn": [
+    "buồn", "buồn bã", "chán", "chán nản", "thất vọng", "tệ", "mất", 
+    "hic", "huhu", "haizz", "mệt", "mệt mỏi", "oải", "đuối", "kiệt sức", 
+    "áp lực", "stress", "nỗ lực", "gồng", "chịu đựng", "gánh nặng", 
+    "không ổn", "bất ổn", "chẳng ổn", "k ổn", "ko ổn", "kh ổn",
+    "tồi tệ", "xấu", "kinh khủng", "khóc", "nước mắt", "rơi lệ", 
+    "tủi thân", "bất lực", "vô dụng", "thất bại", "cô đơn", "lạc lõng", 
+    "đau", "nhói", "tổn thương", "chết", "tự tử", "nhớ", "tiếc", 
+    "vương vấn", "lụy", "chia tay", "ctay"
+  ],
+  "tức_giận": ["tức", "giận", "cau có", "nổi điên", "gato", "cay", "bực", "cáu", "quạo", "ức", "oan", "soi mói", "trách móc", "chửi"],
+  "sợ_hãi": ["sợ", "hoảng", "hoảng loạn", "lo", "lo lắng", "bất an", "run"],
+  "ghê_tởm": ["ghê", "kinh", "tởm", "ghê tởm"],
+  "ngạc_nhiên": ["ngạc nhiên", "bất ngờ", "sốc"]
+}
